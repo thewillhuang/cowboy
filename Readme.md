@@ -20,9 +20,5 @@ $ echo '{ "value": "Hello" }' | apex invoke uppercase
 ```
 
 ```
-$ echo '{   "urls": [
-    "https://segment.com",
-    "https://yahoo.com",
-    "http://apex.run"
-  ]}' | apex invoke requester-apex
+$ apex invoke requester-apex < event.json
 ```

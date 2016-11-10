@@ -23,11 +23,12 @@ module.exports = {
             'latest'
           ],
           plugins: [
-            'transform-runtime',
+            'transform-promise-to-bluebird',
             ['transform-async-to-module-method', {
               module: 'bluebird',
               method: 'coroutine',
             }],
+            'transform-runtime',
           ],
           cacheDirectory: true,
         },
