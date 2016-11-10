@@ -7,10 +7,10 @@ module.exports = {
   output: {
     path: './lib',
     filename: 'index.js',
-    libraryTarget: 'commonjs2'
+    libraryTarget: 'commonjs2',
   },
   externals: {
-    'aws-sdk': 'aws-sdk'
+    'aws-sdk': 'aws-sdk',
   },
   module: {
     loaders: [
@@ -20,7 +20,7 @@ module.exports = {
         query: {
           presets: [
             'stage-0',
-            'latest'
+            'latest',
           ],
           plugins: [
             'transform-promise-to-bluebird',
@@ -32,12 +32,12 @@ module.exports = {
           ],
           cacheDirectory: true,
         },
-        exclude: [/node_modules/]
+        exclude: [/node_modules/],
       },
       {
         test: /\.json$/,
-        loader: 'json-loader'
-      }
+        loader: 'json-loader',
+      },
     ],
   },
   plugins: [
