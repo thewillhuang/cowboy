@@ -49,7 +49,7 @@ module.exports = {
       output: {
         comments: false,
       },
-      // mangle: false,
+      mangle: false,
     }),
   ]
 }
