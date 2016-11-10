@@ -1,0 +1,8 @@
+{
+  "name": "rancher",
+  "description": "uber for paster randy",
+  "memory": 128,
+  "timeout": 1,
+  "role": "arn:aws:iam::015847073762:role/rancher_lambda_function",
+  "environment": {}
+}
