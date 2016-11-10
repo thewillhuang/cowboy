@@ -1,21 +1,20 @@
-
-import axios from 'axios'
+import axios from 'axios';
 
 // Vanilla Lambda function.
-export default async function(e, ctx) {
-  console.log('fetching %d urls', e.urls.length)
+export default async (e, ctx) => {
+  console.log('fetching %d urls', e.urls.length);
 
   try {
-    const res = await Promise.all(e.urls.map(async function(url){
-      console.log('fetching %s', url)
+    const res = await Promise.all(e.urls.map(async (url) => {
+      console.log('fetching %s', url);
       return {
         status: (await axios.get(url)).status,
-        url
-      }
-    }))
+        url,
+      };
+    }));
 
-    ctx.succeed(res)
+    ctx.succeed(res);
   } catch (err) {
-    ctx.fail(err)
+    ctx.fail(err);
   }
-}
+};
