@@ -3,8 +3,7 @@ import axios from 'axios'
 import λ from 'apex.js'
 
 export default λ(e => {
-  console.log('fetching %d urls', e.urls.length)
-  return Promise.all(e.urls.map(async function(url){
+  return Promise.all(e['body-json'].urls.map(async url => {
     console.log('fetching %s', url)
     return {
       status: (await axios.get(url)).status,
