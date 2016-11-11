@@ -5,7 +5,7 @@ module.exports = {
   entry: './src/index.js',
   target: 'node',
   output: {
-    path: './lib',
+    path: './dist',
     filename: 'index.js',
     libraryTarget: 'commonjs2',
   },
@@ -52,5 +52,5 @@ module.exports = {
       },
       mangle: false,
     }),
-  ]
-}
+  ],
+};
