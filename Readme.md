@@ -1,5 +1,3 @@
-[![LambCI Master](https://lambci-public-buildresults-tqta6okzmswu.s3.amazonaws.com/gh/thewillhuang/rancher-in-apex/branches/master/2dbce416aa7f030824e89ac22faf7930.svg)](https://github.com/thewillhuang/rancher-in-apex/tree/master)
-
 To run the example first setup your [AWS Credentials](http://apex.run/#aws-credentials), and ensure "role" in ./project.json is set to your Lambda function ARN.
 
 Install NPM dependencies:
