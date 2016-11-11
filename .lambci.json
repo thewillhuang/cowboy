@@ -1,5 +1,5 @@
 {
-  "cmd": "curl -o- -L https://yarnpkg.com/install.sh | bash; $HOME/.yarn/bin/yarn install; curl https://raw.githubusercontent.com/apex/apex/master/install.sh | sh; /usr/local/bin/apex deploy",
+  "cmd": "curl -o- -L https://yarnpkg.com/install.sh | bash; $HOME/.yarn/bin/yarn install; curl https://raw.githubusercontent.com/apex/apex/master/install.sh | sh; apex deploy",
   "git": {
     "depth": 1
   }
