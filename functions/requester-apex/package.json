@@ -1,12 +1,12 @@
 {
   "name": "requester-apex",
   "version": "1.0.0",
-  "description": "",
+  "description": "serverless api stack",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Will Huang && Friends",
   "license": "ISC",
   "dependencies": {
     "apex.js": "^2.0.0",
