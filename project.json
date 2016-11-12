@@ -9,3 +9,4 @@
     "clean": "rm -fr dist node_modules; yarn"
   }
 }
+remove bin
