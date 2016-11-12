@@ -11,6 +11,7 @@ module.exports = {
   },
   externals: {
     'aws-sdk': 'aws-sdk',
+    scrypt: 'scrypt',
   },
   module: {
     loaders: [
