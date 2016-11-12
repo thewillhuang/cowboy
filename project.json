@@ -1,7 +1,7 @@
 {
   "name": "babel",
   "description": "Node.js Babel (using webpack) example project",
-  "role": "arn:aws:iam::015847073762:role/rancher_lambda_function",
+  "role": "arn:aws:iam::015847073762:role/lambci-public-LambdaExecution-QHIRKC4M1ZD",
   "runtime": "nodejs4.3",
   "handler": "dist.default",
   "hooks": {
