@@ -14,8 +14,4 @@ const validatePassword = (password, hash) =>
   verifyKdf(Buffer.from(hash, 'base64'), Buffer.from(password))
     .catch(e => console.log(e));
 
-export default λ(e =>
-  Promise.all(e.urls.map(async url => ({
-    status: await generateHash(url),
-    url,
-  }))));
+export default λ(e => generateHash(e.password));
