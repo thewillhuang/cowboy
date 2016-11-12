@@ -6,6 +6,6 @@
   "handler": "dist.default",
   "hooks": {
     "build": "$HOME/.yarn/bin/yarn install; ../../node_modules/.bin/webpack --config ../../webpack.config.js;",
-    "clean": "rm -fr dist"
+    "clean": "rm -fr dist node_modules"
   }
 }
