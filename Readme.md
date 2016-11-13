@@ -14,10 +14,7 @@ $ apex deploy
 
 Try it out:
 
+native modules
 ```
 $ echo '{ "password": "Hello" }' | apex invoke requester-apex
-```
-
-```
-$ apex invoke requester-apex < event.json
 ```
