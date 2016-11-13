@@ -2,7 +2,7 @@
 const Webpack = require('webpack');
 const fs = require('fs');
 
-const nodeModules = { aws: 'aws' };
+const nodeModules = { 'aws-sdk': 'aws-sdk' };
 fs.readdirSync('node_modules')
   .filter(x => ['.bin'].indexOf(x) === -1)
   .forEach((mod) => {
