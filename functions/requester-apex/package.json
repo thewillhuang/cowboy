@@ -9,7 +9,6 @@
   "author": "Will Huang && Friends",
   "license": "ISC",
   "dependencies": {
-    "apex.js": "^2.0.0",
     "scrypt": "^6.0.3"
   }
 }
