@@ -3,6 +3,7 @@ const Webpack = require('webpack');
 const fs = require('fs');
 
 const nodeModules = { 'aws-sdk': 'aws-sdk' };
+
 fs.readdirSync('node_modules')
   .filter(x => ['.bin'].indexOf(x) === -1)
   .forEach((mod) => {
@@ -38,7 +39,7 @@ module.exports = {
           ],
           cacheDirectory: true,
         },
-        // exclude: [/node_modules/],
+        exclude: [/node_modules/],
       },
       {
         test: /\.json$/,
@@ -46,17 +47,17 @@ module.exports = {
       },
     ],
   },
-  // plugins: [
-  //   new Webpack.LoaderOptionsPlugin({
-  //     minimize: true,
-  //     debug: false,
-  //   }),
-  //   new Webpack.optimize.UglifyJsPlugin({
-  //     compress: { warnings: false },
-  //     output: {
-  //       comments: false,
-  //     },
-  //     mangle: false,
-  //   }),
-  // ],
+  plugins: [
+    new Webpack.LoaderOptionsPlugin({
+      minimize: true,
+      debug: false,
+    }),
+    new Webpack.optimize.UglifyJsPlugin({
+      compress: { warnings: false },
+      output: {
+        comments: false,
+      },
+      mangle: false,
+    }),
+  ],
 };
