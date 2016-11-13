@@ -15,7 +15,7 @@ $ apex deploy
 Try it out:
 
 ```
-$ echo '{ "value": "Hello" }' | apex invoke uppercase
+$ echo '{ "password": "Hello" }' | apex invoke requester-apex
 ```
 
 ```
