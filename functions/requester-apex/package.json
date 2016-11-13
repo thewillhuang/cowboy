@@ -11,7 +11,6 @@
   "dependencies": {
     "apex.js": "^2.0.0",
     "axios": "^0.15.2",
-    "gm": "^1.23.0",
     "scrypt": "^6.0.3"
   }
 }

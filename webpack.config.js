@@ -1,5 +1,13 @@
 // NOTE: paths are relative to each functions folder
 const Webpack = require('webpack');
+const fs = require('fs');
+
+const nodeModules = { aws: 'aws' };
+fs.readdirSync('node_modules')
+  .filter(x => ['.bin'].indexOf(x) === -1)
+  .forEach((mod) => {
+    nodeModules[mod] = 'commonjs ' + mod;
+  });
 
 module.exports = {
   entry: './src/index.js',
@@ -9,9 +17,7 @@ module.exports = {
     filename: 'index.js',
     libraryTarget: 'commonjs2',
   },
-  externals: {
-    'aws-sdk': 'aws-sdk',
-  },
+  externals: nodeModules,
   module: {
     loaders: [
       {

@@ -4,38 +4,17 @@ apex.js:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/apex.js/-/apex.js-2.0.0.tgz#8134c30ae0941aabe85945499d374a6e6abe2ce7"
 
-array-parallel@~0.1.3:
-  version "0.1.3"
-  resolved "https://registry.yarnpkg.com/array-parallel/-/array-parallel-0.1.3.tgz#8f785308926ed5aa478c47e64d1b334b6c0c947d"
-
-array-series@~0.1.5:
-  version "0.1.5"
-  resolved "https://registry.yarnpkg.com/array-series/-/array-series-0.1.5.tgz#df5d37bfc5c2ef0755e2aa4f92feae7d4b5a972f"
-
 axios:
   version "0.15.2"
   resolved "https://registry.yarnpkg.com/axios/-/axios-0.15.2.tgz#496f50980b2ce1ad2e195af93c2d03b4d035e90d"
   dependencies:
     follow-redirects "0.0.7"
 
-cross-spawn@^4.0.0:
-  version "4.0.2"
-  resolved "https://registry.yarnpkg.com/cross-spawn/-/cross-spawn-4.0.2.tgz#7b9247621c23adfdd3856004a823cbe397424d41"
-  dependencies:
-    lru-cache "^4.0.1"
-    which "^1.2.9"
-
 debug@^2.2.0:
   version "2.3.2"
   resolved "https://registry.yarnpkg.com/debug/-/debug-2.3.2.tgz#94cb466ef7d6d2c7e5245cdd6e4104f2d0d70d30"
   dependencies:
     ms "0.7.2"
-
-debug@~2.2.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/debug/-/debug-2.2.0.tgz#f87057e995b1a1f6ae6a4960664137bc56f039da"
-  dependencies:
-    ms "0.7.1"
 
 follow-redirects@0.0.7:
   version "0.0.7"
@@ -44,30 +23,6 @@ follow-redirects@0.0.7:
     debug "^2.2.0"
     stream-consume "^0.1.0"
 
-gm:
-  version "1.23.0"
-  resolved "https://registry.yarnpkg.com/gm/-/gm-1.23.0.tgz#80a2fe9cbf131515024846444658461269f52661"
-  dependencies:
-    array-parallel "~0.1.3"
-    array-series "~0.1.5"
-    cross-spawn "^4.0.0"
-    debug "~2.2.0"
-
-isexe@^1.1.1:
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/isexe/-/isexe-1.1.2.tgz#36f3e22e60750920f5e7241a476a8c6a42275ad0"
-
-lru-cache@^4.0.1:
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-4.0.1.tgz#1343955edaf2e37d9b9e7ee7241e27c4b9fb72be"
-  dependencies:
-    pseudomap "^1.0.1"
-    yallist "^2.0.0"
-
-ms@0.7.1:
-  version "0.7.1"
-  resolved "https://registry.yarnpkg.com/ms/-/ms-0.7.1.tgz#9cd13c03adbff25b65effde7ce864ee952017098"
-
 ms@0.7.2:
   version "0.7.2"
   resolved "https://registry.yarnpkg.com/ms/-/ms-0.7.2.tgz#ae25cf2512b3885a1d95d7f037868d8431124765"
@@ -75,10 +30,6 @@ ms@0.7.2:
 nan@^2.0.8:
   version "2.4.0"
   resolved "https://registry.yarnpkg.com/nan/-/nan-2.4.0.tgz#fb3c59d45fe4effe215f0b890f8adf6eb32d2232"
-
-pseudomap@^1.0.1:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/pseudomap/-/pseudomap-1.0.2.tgz#f052a28da70e618917ef0a8ac34c1ae5a68286b3"
 
 scrypt:
   version "6.0.3"
@@ -89,14 +40,4 @@ scrypt:
 stream-consume@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/stream-consume/-/stream-consume-0.1.0.tgz#a41ead1a6d6081ceb79f65b061901b6d8f3d1d0f"
-
-which@^1.2.9:
-  version "1.2.11"
-  resolved "https://registry.yarnpkg.com/which/-/which-1.2.11.tgz#c8b2eeea6b8c1659fa7c1dd4fdaabe9533dc5e8b"
-  dependencies:
-    isexe "^1.1.1"
-
-yallist@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/yallist/-/yallist-2.0.0.tgz#306c543835f09ee1a4cb23b7bce9ab341c91cdd4"
 
