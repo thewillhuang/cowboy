@@ -13,4 +13,7 @@ const validatePassword = (password, hash) =>
   verifyKdf(new Buffer(hash, 'base64'), new Buffer(password))
     .catch(e => console.log(e));
 
-export default λ(e => generateHash(e.password));
+export default λ((e) => {
+  console.log('event', e);
+  return generateHash(e.password);
+});
