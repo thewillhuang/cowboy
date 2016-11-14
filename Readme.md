@@ -12,7 +12,7 @@ $ apex deploy
 
 Try it out:
 
-native modules
+native modules on lambda
 ```
 $ echo '{ "password": "Hello" }' | apex invoke requester-apex
 ```
