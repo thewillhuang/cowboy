@@ -10,10 +10,7 @@ module.exports = {
     libraryTarget: 'commonjs2',
   },
   // exclude native modules and included modules on lambda
-  externals: {
-    'aws-sdk': 'aws-sdk',
-    scrypt: 'scrypt',
-  },
+  externals: ['aws-sdk', 'scrypt'],
   module: {
     loaders: [
       {
