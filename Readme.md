@@ -1,7 +1,7 @@
 Install NPM dependencies:
 
 ```
-$ npm install
+$ yarn
 ```
 
 Deploy the functions:
