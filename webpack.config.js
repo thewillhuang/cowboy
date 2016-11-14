@@ -21,6 +21,7 @@ module.exports = {
         loader: 'babel',
         query: {
           plugins: [
+            'check-es2015-constants',
             'transform-promise-to-bluebird',
             'transform-es2015-template-literals',
             'transform-es2015-literals',
@@ -35,14 +36,12 @@ module.exports = {
             'transform-es2015-for-of',
             'transform-es2015-sticky-regex',
             'transform-es2015-unicode-regex',
-            'check-es2015-constants',
             'transform-es2015-spread',
             'transform-es2015-parameters',
             'transform-es2015-destructuring',
             'transform-es2015-block-scoping',
             'transform-es2015-typeof-symbol',
             'transform-es2015-modules-commonjs',
-            'transform-async-to-generator',
             ['transform-async-to-module-method', {
               module: 'bluebird',
               method: 'coroutine',
