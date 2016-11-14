@@ -1,6 +1,3 @@
 {
-  "cmd": ". ~/init/gcc; curl -o- -L https://yarnpkg.com/install.sh | bash; $HOME/.yarn/bin/yarn install; curl -sL https://github.com/apex/apex/releases/download/v0.10.3/apex_linux_amd64 -o ~/apex; chmod +x ~/apex; ~/apex deploy",
-  "git": {
-    "depth": 1
-  }
+  "cmd": ". ~/init/gcc; curl -o- -L https://yarnpkg.com/install.sh | bash; $HOME/.yarn/bin/yarn install; find ./functions/* -name package.json -maxdepth 1 -execdir $HOME/.yarn/bin/yarn install';'; curl -sL https://github.com/apex/apex/releases/download/v0.10.3/apex_linux_amd64 -o ~/apex; chmod +x ~/apex; ~/apex deploy"
 }
