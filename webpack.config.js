@@ -17,9 +17,12 @@ module.exports = {
         test: /\.js$/,
         loader: 'babel',
         query: {
+          // presets: [
+          //   'latest',
+          //   'stage-0',
+          // ],
           plugins: [
             'check-es2015-constants',
-            'transform-promise-to-bluebird',
             'transform-es2015-template-literals',
             'transform-es2015-literals',
             'transform-es2015-function-name',
@@ -39,11 +42,12 @@ module.exports = {
             'transform-es2015-block-scoping',
             'transform-es2015-typeof-symbol',
             'transform-es2015-modules-commonjs',
+            'transform-promise-to-bluebird',
+            'transform-runtime',
             ['transform-async-to-module-method', {
               module: 'bluebird',
               method: 'coroutine',
             }],
-            'transform-runtime',
           ],
           cacheDirectory: true,
         },
@@ -55,17 +59,17 @@ module.exports = {
       },
     ],
   },
-  plugins: [
-    new Webpack.LoaderOptionsPlugin({
-      minimize: true,
-      debug: false,
-    }),
-    new Webpack.optimize.UglifyJsPlugin({
-      compress: { warnings: false },
-      output: {
-        comments: false,
-      },
-      mangle: false,
-    }),
-  ],
+  // plugins: [
+  //   new Webpack.LoaderOptionsPlugin({
+  //     minimize: true,
+  //     debug: false,
+  //   }),
+  //   new Webpack.optimize.UglifyJsPlugin({
+  //     compress: { warnings: false },
+  //     output: {
+  //       comments: false,
+  //     },
+  //     mangle: false,
+  //   }),
+  // ],
 };
