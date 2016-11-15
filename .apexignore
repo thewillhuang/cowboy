@@ -7,3 +7,4 @@ test/
 __test__/
 tests/
 **.md
+yarn-error.log
