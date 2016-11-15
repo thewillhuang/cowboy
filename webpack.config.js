@@ -27,17 +27,17 @@ module.exports = {
       },
     ],
   },
-  plugins: [
-    new Webpack.LoaderOptionsPlugin({
-      minimize: true,
-      debug: false,
-    }),
-    new Webpack.optimize.UglifyJsPlugin({
-      compress: { warnings: false },
-      output: {
-        comments: false,
-      },
-      mangle: false,
-    }),
-  ],
+  // plugins: [
+  //   new Webpack.LoaderOptionsPlugin({
+  //     minimize: true,
+  //     debug: false,
+  //   }),
+  //   new Webpack.optimize.UglifyJsPlugin({
+  //     compress: { warnings: false },
+  //     output: {
+  //       comments: false,
+  //     },
+  //     mangle: false,
+  //   }),
+  // ],
 };
