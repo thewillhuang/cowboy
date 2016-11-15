@@ -1,5 +1,4 @@
 // NOTE: paths are relative to each functions folder
-const Webpack = require('webpack');
 
 module.exports = {
   entry: './src/index.js',
@@ -9,7 +8,7 @@ module.exports = {
     filename: 'index.js',
     libraryTarget: 'commonjs2',
   },
-  // exclude native modules and included modules on lambda
+  // exclude [native c/c++] modules and included modules on lambda
   externals: ['aws-sdk', 'scrypt'],
   module: {
     loaders: [
@@ -27,17 +26,4 @@ module.exports = {
       },
     ],
   },
-  // plugins: [
-  //   new Webpack.LoaderOptionsPlugin({
-  //     minimize: true,
-  //     debug: false,
-  //   }),
-  //   new Webpack.optimize.UglifyJsPlugin({
-  //     compress: { warnings: false },
-  //     output: {
-  //       comments: false,
-  //     },
-  //     mangle: false,
-  //   }),
-  // ],
 };
