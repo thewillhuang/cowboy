@@ -8,8 +8,13 @@ module.exports = {
     filename: 'index.js',
     libraryTarget: 'commonjs2',
   },
-  // exclude [native c/c++] modules and included modules on lambda
-  externals: ['aws-sdk', 'scrypt'],
+  externals: [
+    // included modules on lambda
+    'imagemagick',
+    'aws-sdk',
+    // [native c/c++] modules and
+    'scrypt',
+  ],
   module: {
     loaders: [
       {
