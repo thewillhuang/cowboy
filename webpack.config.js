@@ -35,7 +35,7 @@ module.exports = {
   plugins: [
     new webpack.LoaderOptionsPlugin({
       minimize: true,
-      debug: true,
+      debug: false,
     }),
   //   new webpack.optimize.UglifyJsPlugin({
   //     compress: { warnings: false },
