@@ -1,5 +1,5 @@
 // NOTE: paths are relative to each functions folder
-// const webpack = require('webpack');
+const webpack = require('webpack');
 
 module.exports = {
   entry: './src/index.js',
@@ -32,11 +32,11 @@ module.exports = {
       },
     ],
   },
-  // plugins: [
-  //   new webpack.LoaderOptionsPlugin({
-  //     minimize: true,
-  //     debug: true,
-  //   }),
+  plugins: [
+    new webpack.LoaderOptionsPlugin({
+      minimize: true,
+      debug: true,
+    }),
   //   new webpack.optimize.UglifyJsPlugin({
   //     compress: { warnings: false },
   //     output: {
@@ -44,5 +44,5 @@ module.exports = {
   //     },
   //     mangle: false,
   //   }),
-  // ],
+  ],
 };
