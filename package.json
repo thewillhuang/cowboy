@@ -2,6 +2,9 @@
   "name": "babel",
   "version": "1.0.0",
   "description": "Babel example",
+  "scripts": {
+    "nuke": "find . -type d -name node_modules -exec rm -fr {} +"
+  },
   "dependencies": {
     "apex.js": "^2.0.0",
     "aws-sdk": "2.7.6",
