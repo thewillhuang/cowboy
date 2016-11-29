@@ -1,7 +1,7 @@
 // NOTE: paths are relative to each functions folder
 // const webpack = require('webpack');
 
-module.exports = {
+export default ({
   entry: './src/index.js',
   target: 'node',
   output: {
@@ -32,4 +32,4 @@ module.exports = {
       },
     ],
   },
-};
+});
