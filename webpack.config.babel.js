@@ -3,10 +3,10 @@ import path from 'path';
 // const webpack = require('webpack');
 
 export default ({
-  entry: path.join(__dirname, './src/index.js'),
+  entry: path.join(process.cwd(), './src/index.js'),
   target: 'node',
   output: {
-    path: path.join(__dirname, './dist'),
+    path: path.join(process.cwd(), './dist'),
     filename: 'index.js',
     libraryTarget: 'commonjs2',
   },
