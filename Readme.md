@@ -17,3 +17,8 @@ native modules on lambda
 ```
 $ echo '{ "password": "Hello" }' | apex invoke requester-apex
 ```
+
+api gateway (throttled)
+```
+$ curl -H "Content-Type: application/json" -X POST -d '{ "password": "hello" }' https://93fw7d2uui.execute-api.us-east-1.amazonaws.com/prod
+```
