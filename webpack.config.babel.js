@@ -1,11 +1,12 @@
+import path from 'path';
 // NOTE: paths are relative to each functions folder
 // const webpack = require('webpack');
 
 export default ({
-  entry: './src/index.js',
+  entry: path.join(__dirname, './src/index.js'),
   target: 'node',
   output: {
-    path: './dist',
+    path: path.join(__dirname, './dist'),
     filename: 'index.js',
     libraryTarget: 'commonjs2',
   },
