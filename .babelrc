@@ -5,8 +5,7 @@
           "node": 4
         }
       }
-    },
-    "stage-0"
+    }
   ],
   "plugins": [
     "transform-promise-to-bluebird",
