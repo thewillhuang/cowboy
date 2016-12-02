@@ -8,7 +8,8 @@ const generateHash = password =>
     .then(result => result.toString('base64'));
 
 export default λ(async (e) => {
-  console.log('event', e);
-  console.log('password', JSON.stringify(e.body));
-  return await generateHash(JSON.stringify(e.body).password);
+  const { body } = e;
+  const { password } = JSON.parse(body);
+  console.log('body', body, 'password', password);
+  return await generateHash(password);
 });
