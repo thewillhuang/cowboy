@@ -7,4 +7,4 @@ const generateHash = password =>
   kdf(new Buffer(password), scryptParam)
     .then(result => result.toString('base64'));
 
-export default λ(async e => await generateHash(e.body.password));
+export default λ(async e => await generateHash(JSON.stringify(e.body).password));
