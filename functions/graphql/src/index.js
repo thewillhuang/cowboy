@@ -9,6 +9,5 @@ import λ from 'apex.js';
 
 export default λ(async (e) => {
   const { body } = e;
-  console.log(typeof body);
-  return true;
+  return typeof body;
 });
