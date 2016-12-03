@@ -15,7 +15,7 @@ Try it out:
 
 native modules on lambda
 ```
-$ echo '{ "password": "Hello" }' | apex invoke requester-apex
+$ echo '{ "password": "Hello" }' | apex invoke graphql
 ```
 
 api gateway (throttled)

@@ -9,7 +9,7 @@ const generateHash = password =>
 
 export default λ(async (e) => {
   const { body } = e;
-  const { password } = JSON.parse(body);
-  console.log('body', body, 'password', password);
-  return await generateHash(password);
+  // const { password } = JSON.parse(body);
+  console.log('body', body);
+  return await generateHash('test');
 });
