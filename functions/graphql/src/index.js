@@ -9,5 +9,6 @@ const generateHash = password =>
 
 export default λ(async (e) => {
   const { body: { password } } = e;
+  console.log('password', password);
   return await generateHash(password);
 });
