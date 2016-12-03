@@ -25,7 +25,6 @@
     "transform-es2015-modules-commonjs",
     "transform-promise-to-bluebird",
     "transform-runtime",
-    "transform-promise-to-bluebird",
     ["transform-async-to-module-method", {
       "module": "bluebird",
       "method": "coroutine"
