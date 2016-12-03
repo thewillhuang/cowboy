@@ -9,6 +9,7 @@ const generateHash = password =>
 
 export default λ(async (e) => {
   const { body } = e;
-  // console.log(body);
+  console.log('e is', e);
+  console.log('body is', body);
   return body;
 });
