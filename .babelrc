@@ -24,7 +24,6 @@
     "transform-es2015-typeof-symbol",
     "transform-es2015-modules-commonjs",
     "transform-promise-to-bluebird",
-    "transform-runtime",
     ["transform-async-to-module-method", {
       "module": "bluebird",
       "method": "coroutine"
